@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -26,6 +27,7 @@ int main() {
 		fibonacciSequence[i] = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
 	}
 
+	cout << defaultfloat << setprecision(10);
 	cout << "Fibonacci Sequence is: ";
 	for (int j = 0; j < n; j++) {
 		cout << fibonacciSequence[j] << " ";
